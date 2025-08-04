@@ -1,45 +1,87 @@
-# React-Node Technical Assessment – Food Ordering App
+# 🍽️ Full Stack Food Ordering App – Technical Assessment (MERN)
 
-This is a full stack food ordering web application built with the MERN stack (MongoDB, Express, React, Node.js).
-
-It consists of a customer-facing app and an admin panel for managing menu items, orders, and users.
+This is a fully functional food ordering web application built with the MERN stack (MongoDB, Express, React, Node.js) as part of a technical assessment for The Web3 Ninja team.
 
 ---
 
-## ✅ Completed Fixes (Per Technical Test)
+## 🚀 Live Features
 
-1. **Authentication Error Handling**
-
-   - Login returns `401 Unauthorized` if credentials are incorrect
-   - Register returns `401 Unauthorized` if user already exists
-   - Returns appropriate `400` and `500` status codes for validation/server errors
-
-2. **UI Enhancement**
-
-   - Menu images now have a smooth **hover zoom-in effect**
-
-3. **Order UI Fix**
-   - Quantity buttons (`+`/`–`) are vertically aligned and visually consistent
+- 🔐 User Authentication (JWT-based)
+- 📋 Menu browsing by category
+- 🛒 Add to Cart & Real-time Order Summary
+- 💳 Stripe Payment Integration
+- 🧾 Order Tracking
+- ⚙️ Admin Dashboard (Manage Menu, Orders)
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
-- **Frontend:** React, Context API, CSS
-- **Backend:** Node.js, Express
-- **Database:** MongoDB
-- **Auth:** JWT + Bcrypt
-- **Payments:** Stripe (test mode)
-- **Deployment:** Local only
+| Layer      | Tech Stack |
+|------------|------------|
+| Frontend   | React.js, Context API, React Router |
+| Backend    | Node.js, Express.js, MongoDB        |
+| Auth       | JWT, bcrypt                         |
+| Payments   | Stripe API                          |
+| Styling    | CSS                                 |
 
 ---
 
-## 🚀 How to Run Locally
+## ⚙️ Setup Instructions
 
-### Backend
+### 📦 Prerequisites
+- Node.js
+- MongoDB
 
+---
+
+### 🔧 Backend Setup
 ```bash
 cd backend
 npm install
+
+# Create a .env file and add:
+# MONGO_URL=your_mongo_uri
+# JWT_SECRET=your_jwt_secret
+
 npm run server
-```
+
+
+
+💻 Frontend Setup
+cd frontend
+npm install
+npm run dev
+
+
+🛠️ Admin App Setup
+cd admin
+npm install
+npm run dev
+
+ Fixes Implemented (Assessment Tasks)
+	•	✅ Authentication Fix: Returns proper 401 Unauthorized for invalid login or duplicate registration.
+	•	✅ UI Enhancement: Added zoom-in hover effect for menu images.
+	•	✅ Order UI Fix: Ensured the minus (-) icon stays consistently aligned when quantity updates.
+
+📂 Folder Structure
+├── backend         # Node.js + Express + MongoDB + Auth
+├── frontend        # React.js + Context API + Stripe
+├── admin           # Admin dashboard (React-based)
+├── README.md
+
+
+
+⸻
+
+📬 Contact
+
+Built with ❤️ by PraiseGod Egart
+
+Feel free to reach out for feedback or questions.
+Looking forward to next steps!
+
+
+
+
+  
